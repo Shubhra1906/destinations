@@ -280,7 +280,6 @@ p{
       .login{
         margin:8px 5px;
       }
-
       #about {
         text-align: center;
         padding: 10% 0 10% 10%;
@@ -289,81 +288,16 @@ p{
         backdrop-filter: blur(8px);
         padding-bottom: 10%;
       }
-      
-      #features{
-        padding: 8% 16%;
-        background-color: #fff;
-        position: relative;
-        z-index: 1;
-    }
+
+
     .contact-box{
         text-align: left;
         padding: 5%;
     }
-      
-      .container-discover p{
-        font-family: "ubuntu";
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-        width: 90%;
-        padding-left: 3%;
-        padding-right: 3%;
-      }
-      .container-discover img{
-        padding: 50px 30px;
-        margin: 20px;
-        width: 100%;
-        height:fit-content;
-      }
-    @media (max-width: 1024px){
-      .tabs-line .nav-item-2 .nav-link-2{
-       margin-bottom: 10px;
-    }}
-    .tabs-custom .nav-item-2{
-     float: none;
-     margin: 0;
-     cursor: pointer;
-     transition: .33s all ease;
-    }
-    @media(min-width: 1024px){
-    .tabs-line .nav-link-2{
-      border-width: 1px 0 1px 0;
-      border-style: solid;
-      border-color: #e1e1e1;
-    
-    }}
-    @media (min-width: 1024px){
-      .tabs-line .nav-link-2:hover, .tabs-line .nav-link-2.active{
-        border-color: #01b3a7;
-        color: #01b3a7;
-      }
-    }
-    .tabs-line .nav-link-2{
-      padding: 5px 20px 4px 17px;
-      width: 100%;
-      text-transform: uppercase;
-      font-size: 23px;
-      font-weight: 400;
-      font-family: "Ubuntu";
-      line-height: 1.5;
-      text-align: center;
-      vertical-align: middle;
+    li h6:hover{
       color: #13a6b1;
-      
     }
-    .nav{
-        display: flex;
-        padding: 3%;
-    }
-    .nav-tabs .nav-link-2.active{
-      cursor: default;
-    }
-    .horizon {
-      text-align: left;
-      font-size: 40px;
-      padding-left: 3%;
-      padding-bottom: 3%;
-    }
+
     .contact-btn {
         border: #29d4d2;
         border-radius: 2px;
@@ -374,87 +308,9 @@ p{
         float: left;
         box-sizing: border-box;
       }
-      .t{
-        padding: 2% 0 0 0;
-      }
-       .discover{
-         height:20px;
-       }
-       .horizon{
-         font-family: 'Raleway';
-         font-weight: 700;
-         color: #888;
-         padding-right: 3%;
-       }
 
-       /*Gallery */
-       .container {
-        display: flex;
-        width: 100%;
-        padding: 4% 2%;
-        box-sizing: border-box;
-        height: 100vh;
-      }
-      
-      .box {
-        flex: 1;
-        overflow: hidden;
-        transition: .5s;
-        margin: 0 2%;
-        box-shadow: 0 20px 30px rgba(0,0,0,.1);
-        line-height: 0;
-      }
-      
-      .box > img {
-        width: 200%;
-        height: calc(100% - 10vh);
-        object-fit: cover; 
-        transition: .5s;
-      }
-      
-      .box > span {
-        font-size: 3.8vh;
-        display: block;
-        text-align: center;
-        height: 10vh;
-        line-height: 2.6;
-      }
-      
-      .box:hover { flex: 1 1 50%; }
-      .box:hover > img {
-        width: 100%;
-        height: 100%;
-      }
 
-      #testimonials{
-        text-align: center;
-        background-color:#B8E4F0 ;
-        color: #fff;
-        margin-bottom: 2%;
-    }
-    .testimonial-image{
-      width: 20%;
-        height: 15%;
-        border-radius: 100%;
-        margin: 20px;
-    }
-    #testimonials p{
-      font-family: "Ubuntu";
-      color: #000;
-      font-size: 20px;
-    }
-    .carousel-item{
-    
-      padding: 8% 16% ;
-  }
-
-    .contact-box{
-        text-align: left;
-        padding: 5%;
-    }
-    li h6:hover{
-      color: #13a6b1;
-    }
+    /* Footer section*/
     #footer{
       background-color: #132b46;
       color: #fff;
@@ -477,8 +333,78 @@ p{
      margin: 10px 10px;
      color: #29d4d2;
    }
+   section h4 {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-top: auto;
+  }
+  section img:hover{
+    opacity: 1.5;
+    -webkit-transform:scale(1.02);
+    -moz-transform:scale(1.02);
+    -ms-transform:scale(1.02);
+    -o-transform:scale(1.02);
+    transform:scale(1.02);
+  }
+   .container-tour p{
+    font-family: "ubuntu";
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    width: 90%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .container-tour img{
+    width: 100%;
+    height:fit-content;
+  }
+.container-tour{
+  border: 1.7px solid black;
+
+}
+section{
+  padding: 3%;
+}
+.star{
+  color: #F1D00A;
+  font-size: 24px;
+}
 
 
+.product-big-price-wrap {
+  position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 8px 10px 6px;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    background: transparent;
+    z-index: 1;
+    box-sizing: border-box;
+    
+}
 
-   
-   
+
+.product-big-price {
+    font-size: 35px;
+    letter-spacing: .025em;
+    color: #ffffff;
+  background-color: #13a6b1;
+  padding: 5%;
+  margin: 3%;
+}
+
+  .product-big-price-wrap {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    padding: 8px 10px 6px;}
