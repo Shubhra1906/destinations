@@ -527,7 +527,7 @@ p{
 .icon:hover{
   color: #ff4c68 ;
 }
-#book {
+.book {
   text-align: left;
   padding: 10%;
   margin-bottom: 10%;
@@ -535,19 +535,35 @@ p{
   color: #000;
 }
 
-#book p{
+.book p{
   padding: 1% 12% 0 0;
   font-family: "Ubuntu";
   line-height: 0.5rem;
   font-weight: 600;
   font-size: 20px;
-  color: #000;
+  color: rgb(248, 248, 248);
   
 }
-#book h3{
+.book h3{
   font-family: "Raleway";
   font-size: 50px;
   font-weight: 800;
+}
+.parallax {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.header {
+  height: 75vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 35, 117, 0.235),
+      rgba(117, 57, 0, 0.251)
+    ),
+    url("../images/book.jpg");
 }
 .carousel-caption{
   position: absolute;
@@ -561,4 +577,42 @@ margin-right: 30%;
 }
 .carousel-caption h6{
   font-size: 20px;
+}
+
+
+.heading-primary-main {
+
+  animation: moveinleft 2s ease 1s;
+}
+
+.heading-primary-sub {
+  
+  animation: moveinright 2s ease 1s;
+}
+
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
